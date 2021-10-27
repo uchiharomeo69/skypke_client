@@ -1,0 +1,10 @@
+.emojiList {
+  position: fixed;
+  right: 100px;
+  top: -290px;
+}
+
+section.emoji-scroll-wrapper::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+}

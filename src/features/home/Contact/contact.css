@@ -1,0 +1,4 @@
+.hidescrollbar-content::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+}

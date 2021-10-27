@@ -1,0 +1,7 @@
+.open1 {
+  width: 224px;
+  position: absolute;
+  inset: 0px auto auto 0px;
+  right: 0px;
+  transform: translate(-20px, -2px);
+}

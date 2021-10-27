@@ -1,0 +1,23 @@
+.showoption {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  transform: translate(0px, 30px);
+  width: 160px;
+  margin: 0px;
+}
+
+.showoptionr {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  transform: translate(-150px, 30px);
+  width: 160px;
+  margin: 0px;
+}
+
+.backcolorblue {
+  background-color: #1a60ed;
+}
+
+.white-text {
+  color: #fff;
+}

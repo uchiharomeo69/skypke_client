@@ -1,0 +1,67 @@
+.modal1 {
+  font-size: 12px;
+}
+.head1 {
+  background-color: #e8eced;
+  margin: auto 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header1 {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  padding: 5px;
+  font-weight: bold;
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+.content1 {
+  z-index: 1;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.close1 {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 0px;
+  top: 0px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.form1 {
+  position: relative;
+  width: 100%;
+  background: var(--color-brand);
+  border-radius: 0.75rem;
+}
+.input1 {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.8rem;
+}
+
+.input1[type="search"] {
+  outline: 0;
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
