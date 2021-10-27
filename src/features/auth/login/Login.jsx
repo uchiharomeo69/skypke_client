@@ -101,7 +101,12 @@ function Login() {
                       {isSubmitting && <Spinner size="sm" />} Login
                     </button>
 
-                    <button className="btn btn-outline-secondary intro-y w-full mt-3">
+                    <button
+                      onSubmit={() => {
+                        history.push("/register");
+                      }}
+                      className="btn btn-outline-secondary intro-y w-full mt-3"
+                    >
                       Sign up
                     </button>
                   </div>
