@@ -4,6 +4,10 @@ import * as Yup from "yup";
 
 import { FastField, Form, Formik } from "formik";
 import { Link, useHistory } from "react-router-dom";
+import {
+  setActiveConversation,
+  setListConversation,
+} from "app/slice/conversationSclice";
 import { setError, setToken } from "app/slice/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -12,6 +16,7 @@ import React from "react";
 import { Spinner } from "reactstrap";
 import logo from "dist/images/logo.svg";
 import { useCookies } from "react-cookie";
+import { useEffect } from "react";
 import userApi from "api/user.api";
 
 function Login() {
@@ -102,7 +107,7 @@ function Login() {
                     </button>
 
                     <button
-                      onSubmit={() => {
+                      onClick={() => {
                         history.push("/register");
                       }}
                       className="btn btn-outline-secondary intro-y w-full mt-3"

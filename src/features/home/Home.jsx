@@ -22,7 +22,6 @@ function Home() {
   const token = useSelector((state) => state.auth.token);
   const user = useSelector((state) => state.auth.user);
   const error = useSelector((state) => state.auth.error);
-  const history = useHistory();
   const [cookies, , removeCookies] = useCookies();
   const dispatch = useDispatch();
   useEffect(() => {
@@ -31,7 +30,7 @@ function Home() {
         await dispatch(getUser(token));
       } catch (error) {
         removeCookies("token");
-        history.push("/login");
+        window.open("/login", "_self");
       }
     }
     getInfor();
@@ -46,7 +45,7 @@ function Home() {
   useEffect(() => {
     if (error) {
       removeCookies("token");
-      history.push("/login");
+      window.open("/login", "_self");
     }
   }, [error]);
 

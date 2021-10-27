@@ -7,20 +7,21 @@ import { setInital, setShowAccount } from "app/slice/componentSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Link } from "react-router-dom";
-import profile14 from "dist/images/profile-14.jpg";
+import { useCookies } from "react-cookie";
+import { useHistory } from "react-router-dom";
 
 function Account({ user }) {
   const showAccount = useSelector((state) => state.component.showAccount);
+  const [cookies, , removeCookies] = useCookies();
+  const history = useHistory();
   const dispatch = useDispatch();
   return (
     <Fragment>
       <div className="account-dropdown dropdown relative">
         <Link
           onClick={() => {
-            dispatch(setShowAccount());
-          }}
-          onBlur={() => {
-            dispatch(setInital());
+            if (showAccount) dispatch(setInital());
+            else dispatch(setShowAccount());
           }}
           to="#"
           className="h-full dropdown-toggle flex items-center pl-5"
@@ -62,6 +63,11 @@ function Account({ user }) {
             <div className="border-gray-200 dark:border-dark-4 p-2 border-t">
               <Link
                 to="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  removeCookies("token");
+                  window.open("/login", "_self");
+                }}
                 className="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"
               >
                 <Icon.ToggleRight className="w-4 h-4 mr-2" />
