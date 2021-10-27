@@ -37,12 +37,12 @@ function ChatBoxTopBar() {
           <div className="flex items-center mr-auto">
             <div className="w-12 h-12 flex-none image-fit mr-1">
               <img
-                alt="Topson Messenger Tailwind HTML Admin Template"
                 className="rounded-full"
                 src={
-                  activeConversation.conversation.avatar !== ""
-                    ? activeConversation.conversation.avatar
-                    : profile9
+                  activeConversation?.conversation?.avatar === "" ||
+                  !activeConversation
+                    ? profile9
+                    : activeConversation?.conversation?.avatar
                 }
               />
               {activeConversation.online > 0 && (
