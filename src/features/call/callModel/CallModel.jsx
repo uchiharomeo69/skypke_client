@@ -40,7 +40,7 @@ function CallModel() {
     async function acceptCall() {
       const { friendId } = await recieveFromServer.friendacceptcall();
       history.push(
-        `/calling?_id=${_id}&friendId1=${friendId}&room=${channelId}`
+        `/calling?video=${video}&_id=${_id}&friendId1=${friendId}&room=${channelId}`
       );
     }
     acceptCall();

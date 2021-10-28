@@ -13,11 +13,10 @@ function ChatBoxTopBar() {
     (state) => state.myConversation.activeConversation
   );
   const dispatch = useDispatch();
-  const callObject = useSelector((state) => state.call.callObject);
   const receiveObject = useSelector((state) => state.call.receiveObject);
   const user = useSelector((state) => state.auth.user);
   function call(video) {
-    if (!activeConversation || receiveObject || callObject) return;
+    if (!activeConversation || receiveObject) return;
     sendToServer.call({
       user,
       video,

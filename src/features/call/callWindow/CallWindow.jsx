@@ -14,14 +14,18 @@ import { useLocation } from "react-router";
 import { useState } from "react";
 
 function CallWindow() {
-  const [constraints, setConstraints] = useState({ video: true, audio: true });
-  const myRef = useRef(null);
-  const friendRef = useRef(null);
   const search = useLocation().search;
-
+  const video = new URLSearchParams(search).get("video");
   const room = new URLSearchParams(search).get("room");
   const _id = new URLSearchParams(search).get("_id");
   const start = new URLSearchParams(search).get("start");
+  const [constraints, setConstraints] = useState({
+    video: video === "false" ? false : true,
+    audio: true,
+  });
+  const myRef = useRef(null);
+  const friendRef = useRef(null);
+
   const friendId1Ref = useRef(new URLSearchParams(search).get("friendId1"));
   let peerConnection = null;
   useEffect(() => {
@@ -156,6 +160,11 @@ function CallWindow() {
           </div>
         </div>
       </div>
+      {video === "false" && (
+        <div className="audio">
+          <h2>This is audio call :((</h2>
+        </div>
+      )}
     </>
   );
 }

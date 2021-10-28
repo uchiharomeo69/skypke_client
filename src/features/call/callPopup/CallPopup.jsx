@@ -18,7 +18,7 @@ function CallPopup({ _id, type, name, video, channelId }) {
     if (type === "call") return;
     dispatch(setReceiveObject(null));
     window.open(
-      `./calling?start=true&room=${channelId}&_id=${_id}`,
+      `./calling?video=${video}&start=true&room=${channelId}&_id=${_id}`,
       "_target",
       "width=2000,height=1000"
     );

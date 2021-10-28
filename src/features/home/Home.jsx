@@ -52,7 +52,7 @@ function Home() {
   useEffect(() => {
     async function someoneCall() {
       const { user, video, channelId } = await recieveFromServer.someoneCall();
-      if (callObject || receiveObject) return;
+      // if (callObject || receiveObject) return;
       dispatch(setReceiveObject({ user, video, channelId }));
     }
     someoneCall();
@@ -93,7 +93,7 @@ function Home() {
             type="receive"
             _id={user._id}
             name={receiveObject.user.name}
-            video={receiveObject.video}
+            video={`${receiveObject.video}`}
             channelId={receiveObject.channelId}
           />
         </div>
