@@ -13,6 +13,8 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     function ping() {
+      console.log(process.env.REACT_APP_API_URL, process.env.NODE_ENV);
+
       axios.get("https://sendemailsk.herokuapp.com/").then((res) => {
         console.log(res.data);
       });

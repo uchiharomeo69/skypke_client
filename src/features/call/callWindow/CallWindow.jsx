@@ -144,7 +144,13 @@ function CallWindow() {
             </div>
           </div>
           <div className="icon">
-            <div className="icon1" style={{ backgroundColor: "red" }}>
+            <div
+              className="icon1"
+              onClick={() => {
+                window.close();
+              }}
+              style={{ backgroundColor: "red" }}
+            >
               <Icon.PhoneOff className="element" color="white" />
             </div>
           </div>
