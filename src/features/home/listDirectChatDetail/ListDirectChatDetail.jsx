@@ -19,7 +19,7 @@ function ListDirectChatDetail() {
       <div className="intro-y  leading-tight mt-4 box p-2">
         <div className="boxed-tabs  justify-center flex">
           <Link
-            href="#"
+            to="#"
             onClick={(e) => {
               e.preventDefault();
               setRsChat(!rschat);
@@ -33,7 +33,7 @@ function ListDirectChatDetail() {
             Recent Chats
           </Link>
           <Link
-            href="#"
+            to="#"
             onClick={(e) => {
               e.preventDefault();
               setRsChat(!rschat);

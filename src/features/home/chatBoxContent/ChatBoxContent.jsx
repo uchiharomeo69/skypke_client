@@ -10,12 +10,9 @@ function ChatBoxContent() {
   const listMessage = useSelector((state) => state.listMessage);
   const [target, setTarget] = useState(true); // neu dang o cach bottom 200px thi target phan tu duoi cung
   const user = useSelector((state) => state.auth.user);
-
+  const sendingText = useSelector((state) => state.sending.sendingText);
   const fieldRef = useRef(null);
 
-  //const height = useRef(0); // chieu cao cua full content
-  //const allRef = useRef(null);
-  // const topnow = useRef(0);
   const dispatch = useDispatch();
   useEffect(() => {
     if (fieldRef.current && target) {
@@ -23,11 +20,7 @@ function ChatBoxContent() {
         behavior: "smooth",
       });
     }
-    //console.log(allRef.current.scrollTop);
-    // allRef.current.scrollTop =
-    //   allRef.current.scrollHeight - window.innerHeight + 70;
-    // height.current = allRef.current.scrollHeight;
-  }, [listMessage]);
+  }, [listMessage, sendingText]);
 
   function handleScroll(e) {
     let element = e.target;
@@ -89,6 +82,14 @@ function ChatBoxContent() {
               />
             );
           })
+        )}
+        {sendingText && (
+          <ChatText
+            innerRef={fieldRef}
+            right={true}
+            color={"#7da4ba"}
+            message={{ content: sendingText }}
+          />
         )}
       </div>
     </Fragment>

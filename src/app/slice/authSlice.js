@@ -1,7 +1,6 @@
-import { getToken, getUser } from "app/thunks/auth.thunk";
-
 import Cookies from "universal-cookie";
 import { createSlice } from "@reduxjs/toolkit";
+import { getUser } from "app/thunks/auth.thunk";
 
 const cookies = new Cookies();
 const initialState = {

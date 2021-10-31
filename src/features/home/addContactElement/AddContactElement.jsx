@@ -45,7 +45,6 @@ function AddContactElement({ user, close }) {
           >
             <div className="w-12 h-12 flex-none image-fit mr-1">
               <img
-                alt="Topson Messenger Tailwind HTML Admin Template"
                 className="rounded-full"
                 src={user.avatar !== "" ? user.avatar : profile9}
               />

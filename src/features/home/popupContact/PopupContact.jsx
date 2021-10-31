@@ -71,7 +71,7 @@ function PopupContact({ close }) {
             />
           </form>
         </div>
-        <div className="content1 ">
+        <div className="content1">
           <ListAddContact
             loading={loading}
             searchUser={searchUser}

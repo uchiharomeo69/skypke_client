@@ -73,6 +73,7 @@ function DirectChat() {
 
             {searching ? (
               <Icon.Delete
+                color="red"
                 onClick={() => {
                   setValue("");
                   setSearching(false);

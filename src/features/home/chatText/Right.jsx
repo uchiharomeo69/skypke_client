@@ -6,7 +6,7 @@ import React, { Fragment, useState } from "react";
 
 import { Link } from "react-router-dom";
 
-function Right({ message }) {
+function Right({ message, color }) {
   const [showOption, setShowOption] = useState(false);
 
   return (
@@ -49,7 +49,10 @@ function Right({ message }) {
           </div>
         </div>
       </div>
-      <div className="box leading-relaxed dark:text-gray-300 text-gray-700 px-4 py-3 mt-3 backcolorblue white-text">
+      <div
+        style={{ backgroundColor: color }}
+        className="box leading-relaxed dark:text-gray-300 text-gray-700 px-4 py-3 mt-3 backcolorblue white-text"
+      >
         {message.content}
       </div>
     </Fragment>

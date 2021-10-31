@@ -30,7 +30,6 @@ function Home() {
         await dispatch(getUser(token));
       } catch (error) {
         removeCookies("token");
-        window.open("/login", "_self");
       }
     }
     getInfor();
@@ -45,7 +44,6 @@ function Home() {
   useEffect(() => {
     if (error) {
       removeCookies("token");
-      window.open("/login", "_self");
     }
   }, [error]);
 

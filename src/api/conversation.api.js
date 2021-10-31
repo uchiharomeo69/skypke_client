@@ -1,3 +1,4 @@
+import axios from "axios";
 import axiosClient from "./axiosClient";
 
 class conversationApi {
@@ -23,6 +24,13 @@ class conversationApi {
       {
         headers: { "x-access-token": token },
       }
+    );
+  }
+  createGroup(listMember, token) {
+    return axios.post(
+      "/conversation/group",
+      { listMember },
+      { headers: { "x-access-token": token } }
     );
   }
 }

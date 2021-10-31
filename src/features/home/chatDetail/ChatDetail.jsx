@@ -19,6 +19,7 @@ import { getDefaultConversation } from "app/thunks/conversation.thunk";
 import recieveFromServer from "socket/recieveFromServer";
 import sendToServer from "socket/sendToServer";
 import { setError } from "app/slice/authSlice";
+import { setSending } from "app/slice/sendingSlice";
 
 function ChatDetail() {
   const listMessage = useSelector((state) => state.listMessage);
@@ -71,7 +72,9 @@ function ChatDetail() {
   useEffect(() => {
     async function getMessageFromServer() {
       const ms = await recieveFromServer.messageFromServer();
-      console.log("ms", ms);
+      if (ms.message.senderId === user._id) {
+        dispatch(setSending(null));
+      }
       if (ms?.message?.conversationId === activeConversation.conversation._id) {
         dispatch(addNewMessage(ms?.message));
       }

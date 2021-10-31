@@ -6,7 +6,6 @@ import Left from "./Left";
 import PropTypes from "prop-types";
 import Right from "./Right";
 import moment from "moment";
-import profile9 from "dist/images/profile-9.jpg";
 
 ChatText.propTypes = {
   right: PropTypes.bool,
@@ -18,7 +17,7 @@ ChatText.defaultProps = {
   message: null,
 };
 
-function ChatText({ right, message, innerRef }) {
+function ChatText({ right, message, innerRef, color }) {
   function getSendAt() {
     if (Date.now() - message.sendAt <= 3600 * 1000) {
       return moment(message.sendAt).local().fromNow();
@@ -35,8 +34,8 @@ function ChatText({ right, message, innerRef }) {
         <div
           className={
             right
-              ? "-intro-x chat-text-box flex items-end float-right mb-4"
-              : "-intro-x chat-text-box flex items-end float-left mb-4"
+              ? "chat-text-box flex items-end float-right mb-4"
+              : "chat-text-box flex items-end float-left mb-4"
           }
         >
           <div className="chat-text-box__photo w-10 h-10 hidden sm:block flex-none image-fit relative mr-4">
@@ -44,7 +43,7 @@ function ChatText({ right, message, innerRef }) {
               <img
                 alt="Topson Messenger Tailwind HTML Admin Template"
                 className="rounded-full"
-                src={profile9}
+                src={message.user.avatar}
               />
             )}
           </div>
@@ -58,7 +57,7 @@ function ChatText({ right, message, innerRef }) {
                 }
               >
                 {right ? (
-                  <Right message={message} />
+                  <Right color={color} message={message} />
                 ) : (
                   <Left message={message} />
                 )}

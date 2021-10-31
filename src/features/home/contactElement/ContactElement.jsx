@@ -9,7 +9,6 @@ function ContactElement({ conversation }) {
         <div className="box dark:bg-dark-3 cursor-pointer relative flex items-center px-4 py-3 zoom-in ">
           <div className="w-10 h-10 flex-none image-fit mr-1">
             <img
-              alt="Topson Messenger Tailwind HTML Admin Template"
               className="rounded-full"
               src={conversation.conversation.avatar}
             />

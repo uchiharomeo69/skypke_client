@@ -52,5 +52,12 @@ class SendToServer {
       client.emit("joincallroom", payload);
     });
   }
+  createGroup(payload) {
+    return new Promise((resolve) => {
+      client.emit("createGroup", payload, (data) => {
+        resolve(data);
+      });
+    });
+  }
 }
 export default new SendToServer();

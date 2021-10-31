@@ -1,0 +1,12 @@
+.submit1 {
+  position: relative;
+  top: 120px;
+  .submit2 {
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+  }
+}

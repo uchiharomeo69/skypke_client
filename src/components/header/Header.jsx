@@ -2,7 +2,7 @@ import Account from "components/account/Account";
 import { Link } from "react-router-dom";
 import Notification from "components/notification/Notification";
 import React from "react";
-import logo from "dist/images/logo.svg";
+import logo from "dist/images/chat.ico";
 
 function Header({ user }) {
   return (
@@ -15,7 +15,7 @@ function Header({ user }) {
             src={logo}
           />
           <div className="text-base font-light ml-4">
-            <span className="font-medium">Topson</span> Messenger
+            <span className="font-medium">My</span> Skype
           </div>
         </Link>
         <Link

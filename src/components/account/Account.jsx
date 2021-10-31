@@ -65,8 +65,8 @@ function Account({ user }) {
                 to="#"
                 onClick={(e) => {
                   e.preventDefault();
-                  removeCookies("token");
-                  window.open("/login", "_self");
+
+                  window.location.href = "/login";
                 }}
                 className="flex items-center block p-2 transition duration-300 ease-in-out rounded-md hover:bg-gray-200 dark:hover:bg-dark-3"
               >

@@ -12,6 +12,7 @@ import Emoji from "../emoji/Emoji";
 import TextareaAutosize from "react-textarea-autosize";
 import sendToServer from "socket/sendToServer";
 import { setListMessage } from "app/slice/listMessageSlice";
+import { setSending } from "app/slice/sendingSlice";
 import { useRef } from "react";
 
 function ChatBoxInput() {
@@ -29,7 +30,9 @@ function ChatBoxInput() {
   function sendMessage(e) {
     e.preventDefault();
     if (!activeConversation) return;
+    dispatch(setSending(content));
     setContent("");
+
     sendToServer.sendMessage(
       {
         conversation: activeConversation,
@@ -42,6 +45,7 @@ function ChatBoxInput() {
         dispatch(setActiveConversation(conversation));
         dispatch(setLoading(true));
         dispatch(setListMessage(null));
+        dispatch(setSending(null));
         sendToServer.connectConversation(conversation);
       }
     );

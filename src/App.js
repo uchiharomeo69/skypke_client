@@ -13,14 +13,8 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     function ping() {
-      console.log(process.env.REACT_APP_API_URL, process.env.NODE_ENV);
-
-      axios.get("https://sendemailsk.herokuapp.com/").then((res) => {
-        console.log(res.data);
-      });
-      axios.get("https://fakeskype-chat.herokuapp.com/hello").then((res) => {
-        console.log(res.data);
-      });
+      axios.get("https://sendemailsk.herokuapp.com/").then(() => {});
+      axios.get("https://fakeskype-chat.herokuapp.com/hello").then(() => {});
     }
     ping();
   }, []);

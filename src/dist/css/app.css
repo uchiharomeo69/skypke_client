@@ -1487,7 +1487,7 @@
 }
 .tail-select .select-dropdown ul li.dropdown-option.hover,
 .tail-select .select-dropdown ul li.dropdown-option:hover {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   background-color: #e9edf2;
 }
 .tail-select.disabled .select-dropdown ul li.dropdown-option,
@@ -1593,8 +1593,8 @@
   z-index: 49;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.1s;
@@ -1611,8 +1611,8 @@
   z-index: 49;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.1s;
@@ -1629,8 +1629,8 @@
   z-index: 48;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.2s;
@@ -1647,8 +1647,8 @@
   z-index: 48;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.2s;
@@ -1665,8 +1665,8 @@
   z-index: 47;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.3s;
@@ -1683,8 +1683,8 @@
   z-index: 47;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.3s;
@@ -1701,12 +1701,12 @@
   z-index: 46;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 * > .-intro-x:nth-child(4) {
   transform: translateX(-50px);
@@ -1719,12 +1719,12 @@
   z-index: 46;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 * > .-intro-y:nth-child(4) {
   transform: translateY(-50px);
@@ -1737,8 +1737,8 @@
   z-index: 45;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
@@ -1755,8 +1755,8 @@
   z-index: 45;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
@@ -1773,8 +1773,8 @@
   z-index: 44;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.6s;
@@ -1791,8 +1791,8 @@
   z-index: 44;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.6s;
@@ -1809,8 +1809,8 @@
   z-index: 43;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.7s;
@@ -1827,8 +1827,8 @@
   z-index: 43;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.7s;
@@ -1845,8 +1845,8 @@
   z-index: 42;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.8s;
@@ -1863,8 +1863,8 @@
   z-index: 42;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.8s;
@@ -1881,8 +1881,8 @@
   z-index: 41;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.9s;
@@ -1899,8 +1899,8 @@
   z-index: 41;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.9s;
@@ -1917,8 +1917,8 @@
   z-index: 40;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
@@ -1935,8 +1935,8 @@
   z-index: 40;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
@@ -1953,8 +1953,8 @@
   z-index: 39;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.1s;
@@ -1971,8 +1971,8 @@
   z-index: 39;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.1s;
@@ -1989,8 +1989,8 @@
   z-index: 38;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.2s;
@@ -2007,8 +2007,8 @@
   z-index: 38;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.2s;
@@ -2025,8 +2025,8 @@
   z-index: 37;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.3s;
@@ -2043,8 +2043,8 @@
   z-index: 37;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.3s;
@@ -2061,8 +2061,8 @@
   z-index: 36;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.4s;
@@ -2079,8 +2079,8 @@
   z-index: 36;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.4s;
@@ -2097,8 +2097,8 @@
   z-index: 35;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.5s;
@@ -2115,8 +2115,8 @@
   z-index: 35;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.5s;
@@ -2133,8 +2133,8 @@
   z-index: 34;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.6s;
@@ -2151,8 +2151,8 @@
   z-index: 34;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.6s;
@@ -2169,8 +2169,8 @@
   z-index: 33;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.7s;
@@ -2187,8 +2187,8 @@
   z-index: 33;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.7s;
@@ -2205,8 +2205,8 @@
   z-index: 32;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.8s;
@@ -2223,8 +2223,8 @@
   z-index: 32;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.8s;
@@ -2241,8 +2241,8 @@
   z-index: 31;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.9s;
@@ -2259,8 +2259,8 @@
   z-index: 31;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1.9s;
@@ -2277,8 +2277,8 @@
   z-index: 30;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2s;
@@ -2295,8 +2295,8 @@
   z-index: 30;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2s;
@@ -2313,8 +2313,8 @@
   z-index: 29;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.1s;
@@ -2331,8 +2331,8 @@
   z-index: 29;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.1s;
@@ -2349,8 +2349,8 @@
   z-index: 28;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.2s;
@@ -2367,8 +2367,8 @@
   z-index: 28;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.2s;
@@ -2385,8 +2385,8 @@
   z-index: 27;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.3s;
@@ -2403,8 +2403,8 @@
   z-index: 27;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.3s;
@@ -2421,8 +2421,8 @@
   z-index: 26;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.4s;
@@ -2439,8 +2439,8 @@
   z-index: 26;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.4s;
@@ -2457,8 +2457,8 @@
   z-index: 25;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.5s;
@@ -2475,8 +2475,8 @@
   z-index: 25;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.5s;
@@ -2493,8 +2493,8 @@
   z-index: 24;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.6s;
@@ -2511,8 +2511,8 @@
   z-index: 24;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.6s;
@@ -2529,8 +2529,8 @@
   z-index: 23;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.7s;
@@ -2547,8 +2547,8 @@
   z-index: 23;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.7s;
@@ -2565,8 +2565,8 @@
   z-index: 22;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.8s;
@@ -2583,8 +2583,8 @@
   z-index: 22;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.8s;
@@ -2601,8 +2601,8 @@
   z-index: 21;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.9s;
@@ -2619,8 +2619,8 @@
   z-index: 21;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 2.9s;
@@ -2637,8 +2637,8 @@
   z-index: 20;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3s;
@@ -2655,8 +2655,8 @@
   z-index: 20;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3s;
@@ -2673,8 +2673,8 @@
   z-index: 19;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.1s;
@@ -2691,8 +2691,8 @@
   z-index: 19;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.1s;
@@ -2709,8 +2709,8 @@
   z-index: 18;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.2s;
@@ -2727,8 +2727,8 @@
   z-index: 18;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.2s;
@@ -2745,8 +2745,8 @@
   z-index: 17;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.3s;
@@ -2763,8 +2763,8 @@
   z-index: 17;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.3s;
@@ -2781,8 +2781,8 @@
   z-index: 16;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.4s;
@@ -2799,8 +2799,8 @@
   z-index: 16;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.4s;
@@ -2817,8 +2817,8 @@
   z-index: 15;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.5s;
@@ -2835,8 +2835,8 @@
   z-index: 15;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.5s;
@@ -2853,8 +2853,8 @@
   z-index: 14;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.6s;
@@ -2871,8 +2871,8 @@
   z-index: 14;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.6s;
@@ -2889,8 +2889,8 @@
   z-index: 13;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.7s;
@@ -2907,8 +2907,8 @@
   z-index: 13;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.7s;
@@ -2925,8 +2925,8 @@
   z-index: 12;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.8s;
@@ -2943,8 +2943,8 @@
   z-index: 12;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.8s;
@@ -2961,8 +2961,8 @@
   z-index: 11;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.9s;
@@ -2979,8 +2979,8 @@
   z-index: 11;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 3.9s;
@@ -2997,8 +2997,8 @@
   z-index: 10;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4s;
@@ -3015,8 +3015,8 @@
   z-index: 10;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4s;
@@ -3033,8 +3033,8 @@
   z-index: 9;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.1s;
@@ -3051,8 +3051,8 @@
   z-index: 9;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.1s;
@@ -3069,8 +3069,8 @@
   z-index: 8;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.2s;
@@ -3087,8 +3087,8 @@
   z-index: 8;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.2s;
@@ -3105,8 +3105,8 @@
   z-index: 7;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.3s;
@@ -3123,8 +3123,8 @@
   z-index: 7;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.3s;
@@ -3141,8 +3141,8 @@
   z-index: 6;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.4s;
@@ -3159,8 +3159,8 @@
   z-index: 6;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.4s;
@@ -3177,8 +3177,8 @@
   z-index: 5;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.5s;
@@ -3195,8 +3195,8 @@
   z-index: 5;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.5s;
@@ -3213,8 +3213,8 @@
   z-index: 4;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.6s;
@@ -3231,8 +3231,8 @@
   z-index: 4;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.6s;
@@ -3249,8 +3249,8 @@
   z-index: 3;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.7s;
@@ -3267,8 +3267,8 @@
   z-index: 3;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.7s;
@@ -3285,8 +3285,8 @@
   z-index: 2;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.8s;
@@ -3303,8 +3303,8 @@
   z-index: 2;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.8s;
@@ -3321,8 +3321,8 @@
   z-index: 1;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.9s;
@@ -3339,8 +3339,8 @@
   z-index: 1;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 4.9s;
@@ -3357,8 +3357,8 @@
   z-index: 0;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 5s;
@@ -3375,8 +3375,8 @@
   z-index: 0;
   opacity: 0;
   position: relative;
-  -webkit-animation: intro-y-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-y-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-y-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-y-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 5s;
@@ -5888,7 +5888,7 @@ video {
   animation-direction: alternate;
 }
 .modal.show {
-  transition: visibility 0s ease-in-out 0s, opacity 0.4s ease-in-out 0s;
+  transition: visibility 0s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
   opacity: 1;
   visibility: visible;
 }
@@ -5897,7 +5897,7 @@ video {
 }
 .modal .modal-dialog {
   width: 90%;
-  transition: margin-top 0.4s;
+  transition: margin-top 0.3s;
   margin: -4rem auto 4rem;
 }
 @media (min-width: 640px) {
@@ -6298,8 +6298,8 @@ video {
 .user-list .user-list__action {
   z-index: 50;
   transform: translateX(50px);
-  -webkit-animation: intro-x-animation 0.4s ease-in-out 0.33333s;
-  animation: intro-x-animation 0.4s ease-in-out 0.33333s;
+  -webkit-animation: intro-x-animation 0.3s ease-in-out 0.33333s;
+  animation: intro-x-animation 0.3s ease-in-out 0.33333s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0.2s;

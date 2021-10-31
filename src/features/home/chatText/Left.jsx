@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 
 function Left({ message }) {
   const [showOption, setShowOption] = useState(false);
-
+  const name = message?.nickName !== "" ? message.nickName : message.user.name;
   return (
     <Fragment>
-      <div className="box leading-relaxed dark:text-gray-300 text-gray-700 px-4 py-3 mt-3">
+      <div className="box leading-relaxed dark:text-gray-300 text-gray-700 px-3 py-1 mt-3">
+        <span style={{ fontWeight: "bold", fontSize: "10px" }}>{name} </span>
+        <br />
         {message.content}
       </div>
       <div className="hidden sm:block dropdown relative ml-3 mt-3">

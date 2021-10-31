@@ -4,10 +4,6 @@ import * as Yup from "yup";
 
 import { FastField, Form, Formik } from "formik";
 import { Link, useHistory } from "react-router-dom";
-import {
-  setActiveConversation,
-  setListConversation,
-} from "app/slice/conversationSclice";
 import { setError, setToken } from "app/slice/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -27,8 +23,10 @@ function Login() {
   const dispatch = useDispatch();
   const loginError = useSelector((state) => state.auth.error);
   const history = useHistory();
-  const [, setCookies] = useCookies();
-
+  const [, setCookies, removeCookies] = useCookies();
+  useEffect(() => {
+    removeCookies("token");
+  }, []);
   async function formLogin(value) {
     try {
       const res = await userApi.login(value);
@@ -96,7 +94,10 @@ function Login() {
                     <Link to="#">Forgot Password?</Link>
                   </div>
                   <p className="mt-4" style={{ color: "red" }}>
-                    {loginError?.message}
+                    {loginError?.message !=
+                    "Cannot read property 'data' of undefined"
+                      ? loginError?.message
+                      : "Check your connection"}
                   </p>
                   <div className="intro-y mt-5 xl:mt-8 text-center xl:text-left">
                     <button
