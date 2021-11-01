@@ -21,6 +21,7 @@ function NewGroup() {
   const [error1, setError1] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [total, setTotal] = useState(0);
   useEffect(() => {
     async function getListFriend() {
       try {
@@ -45,6 +46,10 @@ function NewGroup() {
     const index = listFriend.findIndex((e) => {
       return e._id === user._id;
     });
+    if (listFriend[index].check) setTotal(total - 1);
+    else {
+      setTotal(total + 1);
+    }
     listFriend[index].check = !listFriend[index].check;
     setListFriend(listFriend);
   }
@@ -95,7 +100,7 @@ function NewGroup() {
             <label className="form-label">
               *Invite friend:{" "}
               <span style={{ color: "green", fontWeight: "bold" }}>
-                {listFriend.length}
+                {total}
               </span>{" "}
               <span style={{ color: "red" }}>(at least 2 friend)</span>
             </label>
