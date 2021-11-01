@@ -7,13 +7,10 @@ import { setInital, setShowAccount } from "app/slice/componentSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Link } from "react-router-dom";
-import { useCookies } from "react-cookie";
-import { useHistory } from "react-router-dom";
 
 function Account({ user }) {
   const showAccount = useSelector((state) => state.component.showAccount);
-  const [cookies, , removeCookies] = useCookies();
-  const history = useHistory();
+
   const dispatch = useDispatch();
   return (
     <Fragment>
@@ -27,11 +24,7 @@ function Account({ user }) {
           className="h-full dropdown-toggle flex items-center pl-5"
         >
           <div className="w-8 h-8 image-fit">
-            <img
-              alt="Topson Messenger Tailwind HTML Admin Template"
-              className="rounded-full shadow-md"
-              src={user?.avatar}
-            />
+            <img className="rounded-full shadow-md" src={user?.avatar} />
           </div>
           <div className="hidden md:block ml-3">
             <div className="w-28 truncate font-medium leading-tight">
@@ -48,7 +41,6 @@ function Account({ user }) {
               ? "dropdown-content dropdown-menu.show absolute w-56 top-0 right-0 z-20 open1"
               : "dropdown-content dropdown-menu absolute w-56 top-0 right-0 z-20"
           }
-          id="_uek7nk8bn"
           data-popper-placement="bottom-end"
         >
           <div className="dropdown-menu__content box dark:bg-dark-2">

@@ -7,11 +7,11 @@ import {
   setLastMessage,
   setListConversation,
   setLoading,
+  setOnline,
 } from "app/slice/conversationSclice";
 import { useDispatch, useSelector } from "react-redux";
 
 import ChatBox from "../chatBox/ChatBox";
-import Contact from "../Contact/Contact";
 import DirectChat from "../directChat/DirectChat";
 import { client } from "socket/socket";
 import conversationApi from "api/conversation.api";
@@ -33,7 +33,6 @@ function ChatDetail() {
   const loading = useSelector((state) => state.myConversation.loading);
   const { token } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-  const showContact = useSelector((state) => state.component.showContact);
 
   // get list conversation ban dau
   useEffect(() => {
@@ -41,7 +40,13 @@ function ChatDetail() {
       try {
         await dispatch(getDefaultConversation(token));
       } catch (error) {
-        dispatch(setError(error.response?.data));
+        dispatch(
+          setError(
+            error.response
+              ? error.response.data
+              : { message: "check your connection" }
+          )
+        );
       }
     }
     getConversation();
@@ -62,7 +67,11 @@ function ChatDetail() {
         dispatch(setListMessage(res?.data));
         dispatch(setLoading(false));
       } catch (error) {
-        dispatch(setError(error.response?.data));
+        setError(
+          error.response
+            ? error.response.data
+            : { message: "check your connection" }
+        );
       }
     }
     getListMessage();
@@ -91,7 +100,11 @@ function ChatDetail() {
     async function getConnect() {
       const { conversation } = await recieveFromServer.someoneConnect();
       dispatch(setListConversation([conversation]));
-      await sendToServer.connectConversation(conversation);
+      await sendToServer
+        .connectConversation(conversation)
+        .then(({ _id, online }) => {
+          dispatch(setOnline({ _id, online }));
+        });
     }
     getConnect();
     return () => {
@@ -111,7 +124,20 @@ function ChatDetail() {
     };
   }, [listConversation]);
 
-  // handle someonecall
+  // listen create group
+  useEffect(() => {
+    async function getGr() {
+      const data = await recieveFromServer.gtcreate();
+      dispatch(setListConversation([data]));
+      await sendToServer.connectConversation(data).then(({ _id, online }) => {
+        dispatch(setOnline({ _id, online }));
+      });
+    }
+    getGr();
+    return () => {
+      client.off("groudCreate");
+    };
+  }, [listConversation]);
 
   return (
     <>

@@ -1,9 +1,10 @@
+import * as Spinner from "react-spinners";
+
 import React, { Fragment, useState } from "react";
 
 import DirectChatDetailElement from "../directChatDetailElement/DirectChatDetailElement";
 import { Link } from "react-router-dom";
 import NewGroup from "../newGroup/NewGroup";
-import ReactLoading from "react-loading";
 import { useSelector } from "react-redux";
 
 function ListDirectChatDetail() {
@@ -64,12 +65,7 @@ function ListDirectChatDetail() {
               })
             ) : (
               <div className="smallLoading">
-                <ReactLoading
-                  type={"cylon"}
-                  color={"#515452"}
-                  height={"100%"}
-                  width={"100%"}
-                />
+                <Spinner.BeatLoader size={15} color="#5ECFBF" />
               </div>
             )}
           </>

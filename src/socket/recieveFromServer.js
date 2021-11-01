@@ -56,5 +56,14 @@ class RecieveFromServer {
       });
     });
   }
+
+  // listen group create
+  async gtcreate() {
+    return new Promise((resolve) => {
+      client.on("groudCreate", (data) => {
+        resolve(data);
+      });
+    });
+  }
 }
 export default new RecieveFromServer();

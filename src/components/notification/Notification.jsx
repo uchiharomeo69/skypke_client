@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import NotificationItem from "components/notificationItem/NotificationItem";
 import bell from "dist/images/bell.svg";
 
-function Notification(props) {
+function Notification() {
   const showNotification = useSelector(
     (state) => state.component.showNotification
   );

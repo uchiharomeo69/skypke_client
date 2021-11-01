@@ -1,13 +1,14 @@
 import * as Icon from "react-feather";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import ContactFriend from "../contactFriend/ContactFriend";
 import Popup from "reactjs-popup";
-import conversationApi from "api/conversation.api";
+import { Spinner } from "reactstrap";
+import sendToServer from "socket/sendToServer";
 import { setError } from "app/slice/authSlice";
-import { useEffect } from "react";
+import { setListConversation } from "app/slice/conversationSclice";
 import userApi from "api/user.api";
 
 function NewGroup() {
@@ -15,8 +16,11 @@ function NewGroup() {
   const user = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
   const [listFriend, setListFriend] = useState([]);
+  const [title, setTitle] = useState("");
   const [loading, setLoading] = useState(true);
   const [error1, setError1] = useState("");
+  const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     async function getListFriend() {
       try {
@@ -53,24 +57,47 @@ function NewGroup() {
       setError1("Invite at least 2 friend");
       return;
     }
+    setIsLoading(true);
     setError1("");
-    conversationApi.createGroup([...list, user], token);
+    try {
+      sendToServer
+        .createGroup({ members: list, creator: user, token, title })
+        .then((data) => {
+          setTitle("");
+          setListFriend([]);
+          setIsLoading(false);
+          setMessage("Create Success");
+          dispatch(setListConversation([data]));
+        });
+    } catch (error) {
+      setError1(error.message);
+    }
   }
   return (
     <>
       <div className="tab-pane">
         <div className="box p-4 mt-3 mb-6">
           <div className="mt-3">
-            <label className="form-label">*Group Name: (optional)</label>
+            <label className="form-label">
+              *Group Name: <span style={{ color: "red" }}>(optional)</span>
+            </label>
             <input
               type="text"
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+              }}
               className="form-control"
               id="create-group-form-2"
             />
           </div>
           <div className="mt-3">
             <label className="form-label">
-              *Invite friend: (at least 2 friend)
+              *Invite friend:{" "}
+              <span style={{ color: "green", fontWeight: "bold" }}>
+                {listFriend.length}
+              </span>{" "}
+              <span style={{ color: "red" }}>(at least 2 friend)</span>
             </label>
             <br />
             <Popup
@@ -106,11 +133,14 @@ function NewGroup() {
               )}
             </Popup>
           </div>
+          <label className="mt-2" style={{ color: "green" }}>
+            {message}
+          </label>
           <label className="mt-2" style={{ color: "red" }}>
             {error1}
           </label>
           <button onClick={create} className="btn btn-primary w-full mt-3">
-            Create Group
+            {isLoading && <Spinner size="sm" />}Create Group
           </button>
         </div>
       </div>

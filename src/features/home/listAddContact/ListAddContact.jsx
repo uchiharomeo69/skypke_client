@@ -1,6 +1,7 @@
+import * as Spinner from "react-spinners";
+
 import AddContactElement from "../addContactElement/AddContactElement";
 import React from "react";
-import ReactLoading from "react-loading";
 
 function ListAddContact({ loading, searchUser, close }) {
   return (
@@ -17,12 +18,7 @@ function ListAddContact({ loading, searchUser, close }) {
           </ul>
         ) : (
           <div className="smallLoading">
-            <ReactLoading
-              type={"cylon"}
-              color={"#515452"}
-              height={"100%"}
-              width={"100%"}
-            />
+            <Spinner.ClipLoader color="#59adc2" size={30} />
           </div>
         )}
       </div>
@@ -38,12 +34,7 @@ function ListAddContact({ loading, searchUser, close }) {
           </ul>
         ) : (
           <div className="smallLoading">
-            <ReactLoading
-              type={"cylon"}
-              color={"#515452"}
-              height={"100%"}
-              width={"100%"}
-            />
+            <Spinner.ClipLoader color="#59adc2" size={30} />
           </div>
         )}
       </div>

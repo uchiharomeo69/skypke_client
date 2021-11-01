@@ -32,6 +32,8 @@ export const conversationSlice = createSlice({
           e.userId !== action.payload.userId
       );
       if (i === -1) return;
+      if (!state.listConversation[i].online)
+        state.listConversation[i].online = 0;
       if (action.payload.name === "add") state.listConversation[i].online++;
       else {
         state.listConversation[i].online--;

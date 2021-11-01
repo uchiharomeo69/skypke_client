@@ -1,8 +1,9 @@
+import * as Spinner from "react-spinners";
+
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import ChatText from "../chatText/ChatText";
-import ReactLoading from "react-loading";
 import { setLoading } from "app/slice/conversationSclice";
 
 function ChatBoxContent() {
@@ -12,7 +13,9 @@ function ChatBoxContent() {
   const user = useSelector((state) => state.auth.user);
   const sendingText = useSelector((state) => state.sending.sendingText);
   const fieldRef = useRef(null);
-
+  const listConversation = useSelector(
+    (state) => state.myConversation.listConversation
+  );
   const dispatch = useDispatch();
   useEffect(() => {
     if (fieldRef.current && target) {
@@ -44,22 +47,19 @@ function ChatBoxContent() {
       >
         {loading && listMessage && (
           <div className="smallLoading">
-            <ReactLoading
-              type={"spokes"}
-              color={"#515452"}
-              height={"20%"}
-              width={"20%"}
-            />
+            <Spinner.ClipLoader color="#59adc2" size={30} />
           </div>
         )}
         {!listMessage ? (
           <div className="bigLoading">
-            <ReactLoading
+            {/* <ReactLoading
               type={"spokes"}
               color={"#515452"}
               height={"100%"}
               width={"100%"}
-            />
+              
+            /> */}
+            <Spinner.BounceLoader color="#59adc2" size={75} />
           </div>
         ) : (
           listMessage.map((e, i) => {
@@ -89,6 +89,17 @@ function ChatBoxContent() {
             right={true}
             color={"#7da4ba"}
             message={{ content: sendingText }}
+          />
+        )}
+        {listMessage?.length === 0 && listConversation?.length === 0 && (
+          <ChatText
+            innerRef={fieldRef}
+            right={true}
+            color={"#d6b1a9"}
+            message={{
+              content:
+                "Admin: Go to contact find your friend then send one message to start conversation",
+            }}
           />
         )}
       </div>

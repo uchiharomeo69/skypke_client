@@ -1,7 +1,8 @@
 import "./contactFriend.scss";
 
+import * as Spinner from "react-spinners";
+
 import React from "react";
-import ReactLoading from "react-loading";
 
 function ContactFriend({ close, loading, listFriend, setChosen }) {
   return (
@@ -16,12 +17,7 @@ function ContactFriend({ close, loading, listFriend, setChosen }) {
         <div className="content1">
           {loading && (
             <div style={{ marginTop: "9rem" }} className="smallLoading">
-              <ReactLoading
-                type={"spokes"}
-                color={"#515452"}
-                height={"100%"}
-                width={"100%"}
-              />
+              <Spinner.ClipLoader color="#5ECFBF" size={60} />
             </div>
           )}
           {listFriend.length > 0 && (
