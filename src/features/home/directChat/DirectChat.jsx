@@ -79,6 +79,7 @@ function DirectChat() {
                   setSearching(false);
                 }}
                 data-feather="search"
+                style={{ cursor: "pointer" }}
                 className="text-gray-600 w-5 h-5 absolute inset-y-0 right-0 my-auto mr-3"
               />
             ) : (

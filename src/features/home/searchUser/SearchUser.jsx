@@ -7,9 +7,9 @@ function SearchUser({ searchUser }) {
     <Fragment>
       <div
         style={{ fontWeight: "bold" }}
-        className="intro-y text-base font-medium leading-tight mt-3"
+        className="intro-y text-base font-medium leading-tight mt-4"
       >
-        Searching ...
+        <h2>Searching ...</h2>
       </div>
       <div className="intro-y overflow-y-auto scrollbar-hidden pt-2 mt-3 -mx-5 px-6">
         {searchUser?.map((e) => {
