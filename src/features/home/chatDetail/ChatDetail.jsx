@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { addNewMessage, setListMessage } from "app/slice/listMessageSlice";
 import {
   changeOnline,
+  setChating,
   setLastMessage,
   setListConversation,
   setLoading,
@@ -139,6 +140,40 @@ function ChatDetail() {
     };
   }, [listConversation]);
 
+  // someone chating
+  useEffect(() => {
+    async function getGr() {
+      const data = await recieveFromServer.someOneChatting();
+      if (user._id === data.user._id) return;
+
+      dispatch(
+        setChating({ user: data.user, channelId: data.channelId, type: "add" })
+      );
+    }
+    getGr();
+    return () => {
+      client.off("someOneChatting");
+    };
+  }, [listConversation]);
+
+  // someone finish chating
+  useEffect(() => {
+    async function getGr() {
+      const data = await recieveFromServer.someOneFinishChatting();
+      if (user._id === data.user._id) return;
+      dispatch(
+        setChating({
+          user: data.user,
+          channelId: data.channelId,
+          type: "remove",
+        })
+      );
+    }
+    getGr();
+    return () => {
+      client.off("someOneFinishChatting");
+    };
+  }, [listConversation]);
   return (
     <>
       <div className="md:pl-16 pt-16">

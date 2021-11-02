@@ -1,10 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import {
   setActiveConversation,
   setLoading,
 } from "app/slice/conversationSclice";
 
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import moment from "moment";
 import profile9 from "dist/images/profile-9.jpg";
@@ -22,12 +21,22 @@ DirectChatDetailElement.defaultProps = {
 
 function DirectChatDetailElement({ active, conversation }) {
   const dispatch = useDispatch();
+  const [chatting, setChatting] = useState(false);
+
   function setConversation() {
     if (!conversation) return;
     dispatch(setActiveConversation(conversation));
     dispatch(setLoading(true));
     dispatch(setListMessage(null));
   }
+
+  useEffect(() => {
+    if (conversation.listChatting?.length > 0) {
+      setChatting(true);
+    } else {
+      setChatting(false);
+    }
+  }, [conversation]);
 
   return (
     <Fragment>
@@ -76,11 +85,17 @@ function DirectChatDetailElement({ active, conversation }) {
                     }
                     style={{ color: active ? "#fff" : "#a6a8ab" }}
                   >
-                    {conversation.lastMessage
-                      ? conversation.lastMessage.nickName +
+                    {!chatting ? (
+                      conversation.lastMessage ? (
+                        conversation.lastMessage.nickName +
                         "  :  " +
                         conversation.lastMessage.content
-                      : "Say hello!"}
+                      ) : (
+                        "Say hello!"
+                      )
+                    ) : (
+                      <span className="typing">User is typing ...</span>
+                    )}
                   </div>
                 </div>
                 <div className="flex flex-col" style={{ height: "40px" }}>

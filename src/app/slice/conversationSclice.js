@@ -71,6 +71,27 @@ export const conversationSlice = createSlice({
     setLoading: (state, action) => {
       state.loading = action.payload;
     },
+
+    setChating: (state, action) => {
+      const { user, channelId, type } = action.payload;
+      const i = state.listConversation.findIndex(
+        (e) => e.conversation.channelId === channelId
+      );
+      if (i === -1) return;
+
+      const index = state.listConversation[i].listChatting?.findIndex(
+        (e) => e._id === user._id
+      );
+      if ((index === -1 || index === undefined) && type === "add") {
+        if (!index) {
+          state.listConversation[i].listChatting = [user];
+        } else {
+          state.listConversation[i].listChatting?.push(user);
+        }
+      } else if (index !== -1 && type !== "add") {
+        state.listConversation[i].listChatting?.splice(i, 1);
+      }
+    },
   },
 
   extraReducers: {
@@ -95,6 +116,7 @@ export const {
   setOnline,
   setLoading,
   changeOnline,
+  setChating,
 } = actions;
 
 export default reducer;

@@ -43,8 +43,8 @@ function Contact() {
       let content1 = [];
       for (const group in mapConversation) {
         content1.push(
-          <div className="intro-x mt-1">
-            <div className="intro-x text-gray-500 mb-3 mt-1">{group}</div>
+          <div className="intro-x w-full mt-1">
+            <div className="intro-x text-gray-500 mb-3 mt-3">{group}</div>
             {mapConversation[group].map((conversation) => {
               return <ContactElement conversation={conversation} />;
             })}
@@ -81,7 +81,7 @@ function Contact() {
       </Popup>
 
       <div className="intro-y text-xl font-medium">My contact</div>
-      <div className="intro-y overflow-y-auto scrollbar-hidden -mx-5 px-5">
+      <div className="intro-y overflow-y-auto scrollbar-hidden -mx-4 px-3">
         {content.map((element) => {
           return <>{element}</>;
         })}

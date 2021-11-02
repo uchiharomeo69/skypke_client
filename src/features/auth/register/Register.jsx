@@ -4,7 +4,6 @@ import { FastField, Form, Formik } from "formik";
 import React, { useState } from "react";
 
 import InputField from "custom_fields/InputFields/InputField";
-import { Link } from "react-router-dom";
 import { Spinner } from "reactstrap";
 import logo from "dist/images/logo.svg";
 import { useHistory } from "react-router-dom";
@@ -34,7 +33,6 @@ function Register() {
     try {
       const res = await userApi.register(value);
       if (res) {
-        console.log("thanh cong", res);
         setError(null);
         setRes({
           message:

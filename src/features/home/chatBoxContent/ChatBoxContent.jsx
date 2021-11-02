@@ -16,14 +16,35 @@ function ChatBoxContent() {
   const listConversation = useSelector(
     (state) => state.myConversation.listConversation
   );
+  const activeConversation = useSelector(
+    (state) => state.myConversation.activeConversation
+  );
+  const [listChatting, setListChatting] = useState(null);
+
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (!listConversation) return;
+    const index = listConversation?.findIndex(
+      (e) => e?._id === activeConversation?._id
+    );
+
+    if (index === undefined || index === -1) {
+      return;
+    }
+
+    const a = listConversation[index].listChatting;
+
+    setListChatting(a);
+  }, [listConversation, activeConversation]);
+
   useEffect(() => {
     if (fieldRef.current && target) {
       fieldRef.current.scrollIntoView({
         behavior: "smooth",
       });
     }
-  }, [listMessage, sendingText]);
+  }, [listMessage, sendingText, listChatting]);
 
   function handleScroll(e) {
     let element = e.target;
@@ -43,7 +64,6 @@ function ChatBoxContent() {
       <div
         className="overflow-y-scroll scrollbar-hidden pt-5 flex-1"
         onScroll={handleScroll}
-        //  ref={allRef}
       >
         {loading && listMessage && (
           <div className="smallLoading">
@@ -52,13 +72,6 @@ function ChatBoxContent() {
         )}
         {!listMessage ? (
           <div className="bigLoading">
-            {/* <ReactLoading
-              type={"spokes"}
-              color={"#515452"}
-              height={"100%"}
-              width={"100%"}
-              
-            /> */}
             <Spinner.BounceLoader color="#59adc2" size={75} />
           </div>
         ) : (
@@ -99,6 +112,18 @@ function ChatBoxContent() {
             message={{
               content:
                 "Admin: Go to contact find your friend then send one message to start conversation",
+            }}
+          />
+        )}
+        {listChatting?.length > 0 && (
+          <ChatText
+            innerRef={fieldRef}
+            typing={true}
+            right={false}
+            color={"#d6b1a9"}
+            message={{
+              content: "Typing ...",
+              user: listChatting?.[0],
             }}
           />
         )}

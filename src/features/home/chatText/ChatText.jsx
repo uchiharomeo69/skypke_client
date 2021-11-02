@@ -17,7 +17,7 @@ ChatText.defaultProps = {
   message: null,
 };
 
-function ChatText({ right, message, innerRef, color }) {
+function ChatText({ right, message, innerRef, color, typing }) {
   function getSendAt() {
     if (Date.now() - message.sendAt <= 3600 * 1000) {
       return moment(message.sendAt).local().fromNow();
@@ -59,7 +59,7 @@ function ChatText({ right, message, innerRef, color }) {
                 {right ? (
                   <Right color={color} message={message} />
                 ) : (
-                  <Left message={message} />
+                  <Left message={message} typing={typing} />
                 )}
               </div>
               <div className="clear-both"></div>

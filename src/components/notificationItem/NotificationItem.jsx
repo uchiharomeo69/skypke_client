@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import profile13 from "dist/images/profile-13.jpg";
 
-function NotificationItem(props) {
+function NotificationItem() {
   return (
     <Fragment>
       <div className="cursor-pointer relative flex items-center mt-6">

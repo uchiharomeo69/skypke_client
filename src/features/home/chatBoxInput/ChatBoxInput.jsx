@@ -16,12 +16,16 @@ import { setSending } from "app/slice/sendingSlice";
 import { useRef } from "react";
 
 function ChatBoxInput() {
+  const user = useSelector((state) => state.auth.user);
   const formRef = useRef(null);
   const dispatch = useDispatch();
   const [content, setContent] = useState("");
   const activeConversation = useSelector(
     (state) => state.myConversation.activeConversation
   );
+  const typingRef = useRef(null);
+  const checkSendTypingRef = useRef(false);
+
   const { token } = useSelector((state) => state.auth);
 
   function addContent(value) {
@@ -29,9 +33,17 @@ function ChatBoxInput() {
   }
   function sendMessage(e) {
     e.preventDefault();
+    if (content.trim() === "") return;
     if (!activeConversation) return;
     dispatch(setSending(content));
     setContent("");
+    clearTimeout(typingRef.current);
+
+    checkSendTypingRef.current = false;
+    sendToServer.focusOut({
+      user,
+      channelId: activeConversation?.conversation.channelId,
+    });
 
     sendToServer.sendMessage(
       {
@@ -50,9 +62,32 @@ function ChatBoxInput() {
       }
     );
   }
+
+  function chatting() {
+    if (checkSendTypingRef.current === false) {
+      sendToServer.focusIn({
+        user,
+        channelId: activeConversation?.conversation.channelId,
+      });
+      checkSendTypingRef.current = true;
+    }
+    clearTimeout(typingRef.current);
+    typingRef.current = setTimeout(() => {
+      checkSendTypingRef.current = false;
+      sendToServer.focusOut({
+        user,
+        channelId: activeConversation?.conversation.channelId,
+      });
+    }, 3000);
+  }
   return (
     <Fragment>
-      <form onSubmit={sendMessage} ref={(ref) => (formRef.current = ref)}>
+      <form
+        onSubmit={(e) => {
+          sendMessage(e);
+        }}
+        ref={(ref) => (formRef.current = ref)}
+      >
         <div className="intro-y chat-input box border-theme-3 dark:bg-dark-2 dark:border-dark-2 border flex items-center px-4 py-4">
           <TextareaAutosize
             minRows="1"
@@ -61,6 +96,8 @@ function ChatBoxInput() {
             onKeyPress={(e) => {
               if (e.key === "Enter") {
                 sendMessage(e);
+              } else {
+                chatting();
               }
             }}
             onChange={(e) => {

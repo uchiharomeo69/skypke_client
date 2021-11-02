@@ -59,5 +59,19 @@ class SendToServer {
       });
     });
   }
+  focusIn(payload) {
+    return new Promise((resolve) => {
+      client.emit("focusIn", payload, (data) => {
+        resolve(data);
+      });
+    });
+  }
+  focusOut(payload) {
+    return new Promise((resolve) => {
+      client.emit("focusOut", payload, (data) => {
+        resolve(data);
+      });
+    });
+  }
 }
 export default new SendToServer();

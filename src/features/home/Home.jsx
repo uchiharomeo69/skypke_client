@@ -2,13 +2,13 @@ import "App.css";
 import "dist/css/app.css";
 
 import React, { useEffect } from "react";
-import { Redirect, useHistory } from "react-router";
 import { setCallObject, setReceiveObject } from "app/slice/callSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import CallPopup from "features/call/callPopup/CallPopup";
 import ChatDetail from "./chatDetail/ChatDetail";
 import Header from "components/header/Header";
+import { Redirect } from "react-router";
 import SideMenu from "components/sideMenu/SideMenu";
 import { client } from "socket/socket";
 import { getUser } from "app/thunks/auth.thunk";

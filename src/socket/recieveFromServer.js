@@ -65,5 +65,24 @@ class RecieveFromServer {
       });
     });
   }
+
+  // someOneChatting
+  async someOneChatting() {
+    return new Promise((resolve) => {
+      client.on("someOneChatting", (data) => {
+        resolve(data);
+      });
+    });
+  }
+
+  // someOneFinishChatting
+
+  async someOneFinishChatting() {
+    return new Promise((resolve) => {
+      client.on("someOneFinishChatting", (data) => {
+        resolve(data);
+      });
+    });
+  }
 }
 export default new RecieveFromServer();

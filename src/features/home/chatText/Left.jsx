@@ -4,15 +4,23 @@ import React, { Fragment, useState } from "react";
 
 import { Link } from "react-router-dom";
 
-function Left({ message }) {
+function Left({ message, typing }) {
   const [showOption, setShowOption] = useState(false);
-  const name = message?.nickName !== "" ? message.nickName : message.user.name;
+  let name = message?.nickName;
+  if (!message?.nickName !== "") {
+    name = message.user.name;
+  }
   return (
     <Fragment>
       <div className="box leading-relaxed dark:text-gray-300 text-gray-700 px-3 py-1 mt-3">
-        <span style={{ fontWeight: "bold", fontSize: "10px" }}>{name} </span>
+        <span
+          className={typing ? "typing" : null}
+          style={{ fontWeight: "bold", fontSize: "10px" }}
+        >
+          {name}{" "}
+        </span>
         <br />
-        {message.content}
+        <span className={typing ? "typing" : null}>{message.content}</span>
       </div>
       <div className="hidden sm:block dropdown relative ml-3 mt-3">
         <Link to="#" className="dropdown-toggle w-4 h-4">
