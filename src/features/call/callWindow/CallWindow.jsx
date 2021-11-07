@@ -23,6 +23,8 @@ function CallWindow() {
     video: video === "false" ? false : true,
     audio: true,
   });
+  const [connect, setConnect] = useState(false);
+
   const myRef = useRef(null);
   const friendRef = useRef(null);
 
@@ -49,7 +51,8 @@ function CallWindow() {
         const stream = await MediaDevice.getStream(constraints);
         myRef.current.srcObject = stream;
 
-        peerConnection?.call(friendId1Ref.current, stream);
+        await peerConnection?.call(friendId1Ref.current, stream);
+        setConnect(true);
       }
     }
     firstcall();
@@ -71,7 +74,8 @@ function CallWindow() {
       const stream = await MediaDevice.getStream(constraints);
       myRef.current.srcObject = stream;
       friendId1Ref.current = friendId;
-      peerConnection?.call(friendId, stream);
+      await peerConnection?.call(friendId, stream);
+      setConnect(true);
     }
     sharecall();
     return () => {
@@ -90,6 +94,9 @@ function CallWindow() {
   }, []);
 
   async function change(video) {
+    if (!connect) {
+      return;
+    }
     const newConstraints = video
       ? {
           ...constraints,
@@ -102,11 +109,11 @@ function CallWindow() {
     setConstraints(newConstraints);
 
     const tracks = myRef.current?.srcObject.getTracks();
-    tracks.forEach((track) => {
-      if (video && track.kind === "video") {
+    tracks?.forEach((track) => {
+      if (video && track?.kind === "video") {
         track.enabled = !constraints.video;
       }
-      if (!video && track.kind === "audio") {
+      if (!video && track?.kind === "audio") {
         track.enabled = !constraints.audio;
       }
     });
@@ -126,7 +133,7 @@ function CallWindow() {
                 change(true);
               }}
             >
-              {constraints.video ? (
+              {constraints?.video && connect ? (
                 <Icon.Camera className="element" color="white" />
               ) : (
                 <Icon.CameraOff className="element" color="white" />
@@ -140,7 +147,7 @@ function CallWindow() {
                 change(false);
               }}
             >
-              {constraints.audio ? (
+              {constraints?.audio && connect ? (
                 <Icon.Mic className="element" color="white" />
               ) : (
                 <Icon.MicOff className="element" color="white" />
